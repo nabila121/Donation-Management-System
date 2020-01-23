@@ -1,0 +1,27 @@
+CREATE TABLE timeline(
+	t_id INT,
+    description varchar(1000),
+    cat_id INT,
+    rcv_id INT,
+    hidden INT,
+    total_amount INT,
+    rcv_amount INT,
+    PRIMARY KEY(t_id),
+    FOREIGN KEY(cat_id) REFERENCES category(cat_id),
+    FOREIGN KEY(rcv_id) REFERENCES receiver(rcv_id)
+)
+
+$donated = $amount;
+$sql = "Select $rcvamount from timeline where t_id = $t_id";
+
+$r['rcvamount']+$donated == $totalamount{
+	$sql = "Update timeline set hidden=1";
+}
+
+
+$ sql = "select * from timeline";
+
+$r['hidden'] == 1
+do nothing;
+$r['hidden']==0
+show the content
